@@ -1,0 +1,88 @@
+.invoice-container {
+  font-family: "Noto Nastaliq Urdu", sans-serif;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background: #cfd8dc;
+  padding: 8px;
+}
+
+.header label {
+  font-size: 13px;
+}
+
+.header input {
+  width: 100%;
+}
+
+.items-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.items-table th {
+  background: #607d8b;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.items-table td {
+  border: 1px solid #ccc;
+}
+
+.items-table input {
+  width: 100%;
+  border: none;
+  padding: 4px;
+}
+
+.total {
+  background: #e0f2f1;
+  text-align: center;
+}
+
+.add-btn {
+  margin-top: 6px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #ffe0b2;
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.grand-total {
+  color: #d32f2f;
+  font-weight: bold;
+}
+.form-label {
+width: fit-content;
+padding: 0px 5px;
+}
+.col-form-label {
+width: fit-content;
+padding: 0px 5px;
+}
+.input-group {
+display: flex;
+width: 200px;
+}
+.field-box{
+  padding: 0px;
+}

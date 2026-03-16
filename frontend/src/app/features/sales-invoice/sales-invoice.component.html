@@ -1,0 +1,351 @@
+<div class="invoice-container" dir="rtl">
+<!-- <div class="row"> -->
+ <div class="row">
+  <div class="col-12 col-md-5">
+
+    <!-- ================= PARTY INFO ================= -->
+    <section class="party-info p-3 border rounded mb-2">
+      <h6 class="mb-2">تفصیلات پارٹی</h6>
+
+      <!-- Row 1 -->
+      <div class="row g-2">
+        <div class="col-4">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">تاریخ</label>
+            <div class="field-box col-7">
+              <input type="date" class="form-control" [(ngModel)]="billDetail.date">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">قسم</label>
+            <div class="field-box col-7">
+              <select class="form-select" [(ngModel)]="billDetail.invoiceType">
+                <option value="Gari">اگرائ</option>
+                <option value="Bill">بیوپاری بل</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">Copy No</label>
+            <div class="field-box col-7">
+              <input type="text" class="form-control" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row g-2 mt-1">
+        <div class="col-5">
+          <div class="row align-items-center">
+            <label class="col-4 col-form-label">بیوپاری</label>
+            <div class="field-box col-8">
+              <input type="text" class="form-control" [(ngModel)]="supplier.id">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-7">
+          <div class="row align-items-center">
+            <label class="col-4 col-form-label">نام</label>
+            <div class="field-box col-8">
+              <select class="form-select" [(ngModel)]="supplier.name">
+                <option value="1">اگرائ</option>
+                <option value="2">بیوپاری بل</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row g-2 mt-1">
+        <div class="col-3">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">Gari No</label>
+            <div class="field-box col-7">
+              <input class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">Goods</label>
+            <div class="field-box col-7">
+              <select class="form-select"></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">Naam Zamidar</label>
+            <div class="field-box col-7">
+              <select class="form-select"></select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Balance -->
+      <div class="row mt-1">
+        <div class="col-12">
+          <div class="row align-items-center">
+            <label class="col-4 col-form-label">Beyopari Balance</label>
+            <div class="col-8">
+              <input class="form-control" [(ngModel)]="supplier.balance">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUSTOMER INFO ================= -->
+    <section class="customer-info p-3 border rounded mb-2">
+      <h6 class="mb-2">تفصیلات گاہک</h6>
+
+      <div class="row g-2">
+        <div class="col-5">
+          <div class="row align-items-center">
+            <label class="col-4 col-form-label">بیوپاری</label>
+            <div class="col-8">
+              <input class="form-control" [(ngModel)]="customer.id">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-7">
+          <div class="row align-items-center">
+            <label class="col-4 col-form-label">نام</label>
+            <div class="col-8">
+              <select class="form-select" [(ngModel)]="customer.name"></select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-1">
+        <div class="col-12">
+          <div class="row align-items-center">
+            <label class="col-4 col-form-label">Customer Balance</label>
+            <div class="col-8">
+              <input class="form-control" [(ngModel)]="customer.balance">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ITEM INFO ================= -->
+    <section class="item-info p-3 border rounded">
+      <h6 class="mb-2">تفصیلات آئٹم</h6>
+
+      <div class="row g-1">
+        <div class="col-2">
+          <div class="row align-items-center">
+            <label class="col-6 col-form-label small">اشیاء</label>
+            <div class="field-box col-6">
+              <input class="form-control form-control-sm" [(ngModel)]="product.id">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="row align-items-center">
+            <label class="col-4 col-form-label small">Asia Naam</label>
+            <div class="field-box col-8">
+              <select class="form-select form-select-sm" [(ngModel)]="product.name"></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row align-items-center">
+            <label class="col-6 col-form-label small">Packing</label>
+            <div class="field-box col-6">
+              <select class="form-select" [(ngModel)]="product.unit"></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="row align-items-center">
+            <label class="col-6 col-form-label ">Laga</label>
+            <div class="field-box col-6">
+              <input class="form-control" [(ngModel)]="product.laga">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-1 mt-1">
+        <div class="col-2">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label ">Tadaad</label>
+            <div class="field-box col-6">
+              <input type="number" class="form-control" [(ngModel)]="product.quantity">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="row align-items-center">
+            <label class="col-6 col-form-label">Rate</label>
+            <div class="field-box col-6">
+              <input type="number" class="form-control" [(ngModel)]="product.rate">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="row align-items-center">
+            <label class="col-6 col-form-label">Total</label>
+            <div class="field-box col-6">
+              <input class="form-control" readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">Marka</label>
+            <div class="field-box col-7">
+              <select class="form-select"></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row align-items-center">
+            <label class="col-5 col-form-label">Laat No</label>
+            <div class="field-box col-7">
+              <select class="form-select"></select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+        <table class="items-table">
+          <thead>
+            <tr>
+              <th>Naam kharcha</th>
+              <th>Calculation</th>
+              <th>مقدار</th>
+              <th>Raqam</th>
+              <th>Kul Kharcha</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let item of bill.billExpenditures">
+              <td><input [(ngModel)]="item.code"></td>
+              <td><input [(ngModel)]="item.name"></td>
+              <td><input type="number" [(ngModel)]="item.qty" (input)="calculate(item)"></td>
+              <td><input type="number" [(ngModel)]="item.rate" (input)="calculate(item)"></td>
+              <td><input type="number" [(ngModel)]="item.discount" (input)="calculate(item)"></td>
+              <td class="total">{{item.total | number}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </section> -->
+  <button class="add-btn" (click)="addRow()">+ آئٹم شامل کریں</button>
+  </div>
+
+
+<!-- <div class="col-4">
+  <section class="party-info flex-column">
+    <div class="w-50">
+      <label>تاریخ</label>
+      <input type="date" [(ngModel)]="invoice.date">
+   </div>
+   <div class="w-50">
+<select class="form-select" aria-label="Default select example">
+  <option value="1">اگرائ</option>
+  <option value="2">بیوپاری بل</option>
+</select>
+</div>
+    <div>
+          
+      <label>انوائس نمبر</label>
+      <input type="text" [(ngModel)]="invoice.invoiceNo">
+      </div>
+      <div>
+      <label>پارٹی</label>
+      <input type="text" [(ngModel)]="invoice.customer">
+    </div>
+
+    <div>
+      <label>سیلز مین</label>
+      <input type="text" [(ngModel)]="invoice.salesman">
+    </div>
+  </section>
+   <section class="party-info">
+    <div>
+      <label>تاریخ</label>
+      <input type="date" [(ngModel)]="invoice.date">
+
+      <label>انوائس نمبر</label>
+      <input type="text" [(ngModel)]="invoice.invoiceNo">
+    </div>
+
+    <div>
+      <label>پارٹی</label>
+      <input type="text" [(ngModel)]="invoice.customer">
+    </div>
+
+    <div>
+      <label>سیلز مین</label>
+      <input type="text" [(ngModel)]="invoice.salesman">
+    </div>
+  </section>
+</div> -->
+<div class="col-7">
+  <!-- GRID -->
+  <table class="items-table">
+    <thead>
+      <tr>
+        <th>Asiya qisam</th>
+        <th>code</th>
+        <th>Naam Kharidar</th>
+        <th>Tadaad</th>
+        <th>Laga</th>
+        <th>Rate</th>
+        <th>رعایت</th>
+        <th>کل رقم</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of transactions">
+        <td><input >{{getProductInfo(item.productId)}}</td>
+        <td><input [(ngModel)]="item.productId"></td>
+        <td><input >{{getCustomerInfo(item.customerId)}}</td>
+        <td><input [(ngModel)]="item.quantity"></td>
+        <td><input type="number" [(ngModel)]="item.totalLaga" (input)="calculate(item)"></td>
+        <td><input type="number" [(ngModel)]="item.rate" (input)="calculate(item)"></td>
+        <td><input type="number" [(ngModel)]="item.discount" (input)="calculate(item)"></td>
+        <td><input type="number" [(ngModel)]="item.amount"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="actions mt-2">
+    <button class="btn btn-primary me-2" (click)="saveInvoice()">سیو انوائس</button>
+    <button class="btn btn-secondary">پرنٹ انوائس</button>
+</div>
+  
+
+  <!-- FOOTER TOTALS -->
+  <div class="footer">
+    <div>کل آئٹمز: {{transactions.length}}</div>
+    <div class="grand-total">کل رقم: {{grandTotal | number}}</div>
+  </div>
+</div>
+</div>

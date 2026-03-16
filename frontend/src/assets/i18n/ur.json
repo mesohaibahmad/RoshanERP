@@ -1,0 +1,26 @@
+{
+  "LOGIN": {
+    "TITLE": "لاگ ان کریں",
+    "USERNAME": "یوزر نیم",
+    "PASSWORD": "پاس ورڈ",
+    "SUBMIT": "داخل کریں"
+  },
+  "DASHBOARD": {
+    "WELCOME": "خوش آمدید",
+    "TOTAL_ASSETS": "کل اثاثے"
+  },
+  "ACCOUNTS": {
+    "TITLE": "کھاتے",
+    "ADD": "نیا کھاتہ شامل کریں",
+    "NAME": "نام",
+    "TYPE": "قسم"
+  },
+  "TRANSACTIONS": {
+    "TITLE": "لین دین",
+    "DEBIT": "ڈیبٹ",
+    "CREDIT": "کریڈٹ"
+  },
+  "ERRORS": {
+    "REQUIRED": "یہ فیلڈ ضروری ہے"
+  }
+}
