@@ -1,4 +1,4 @@
-Roshan - Starter Accounts Management (Angular + .NET)
+Roshan - Sales and Commisson Management (Angular + .NET)
 
 Folders:
 - backend/RoshanAPI : .NET Web API (Program.cs, Controllers, Models)
