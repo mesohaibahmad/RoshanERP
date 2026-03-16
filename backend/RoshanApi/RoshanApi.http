@@ -1,0 +1,6 @@
+@RoshanApi_HostAddress = http://localhost:5279
+
+GET {{RoshanApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

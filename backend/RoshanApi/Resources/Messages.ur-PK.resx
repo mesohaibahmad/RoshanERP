@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="UsernameExists" xml:space="preserve"><value>یوزر نیم پہلے سے موجود ہے۔</value></data>
+  <data name="InvalidCredentials" xml:space="preserve"><value>غلط شناختی معلومات۔</value></data>
+</root>
